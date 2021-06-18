@@ -4,9 +4,9 @@ from flask_jwt_extended import JWTManager, jwt_required, create_access_token, ge
 import mysql.connector
 
 app = Flask(__name__)
-app.secret_key="Hamtel575$"
+app.secret_key="......."
 sh=app.secret_key
-db=mysql.connector.connect(host="localhost",user="root", password="",database="db1")
+db=mysql.connector.connect(host="localhost",user="", password="",database="")
 jwt = JWTManager(app)
 
 @app.route("/signup", methods=["POST"])
